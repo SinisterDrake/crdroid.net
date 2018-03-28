@@ -419,6 +419,9 @@ header {
     font-size: 19px;
     color: #b5a4c8;
     background: #f5eff7;
+    a {
+        cursor: pointer;
+    }
 }
 
 .nav-tabs .nav-link.active {

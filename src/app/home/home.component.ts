@@ -83,11 +83,11 @@ export class HomeComponent implements AfterViewInit {
           });
       }
   
-  }); /* End Fn */
+    }); /* End Fn */
   }
 
   scroll(el) {
-    el.scrollIntoView();
+    el.scrollIntoView({ behavior: 'smooth' });
   }
 
 }
