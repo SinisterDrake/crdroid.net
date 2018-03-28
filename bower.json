@@ -16,8 +16,7 @@
     "./src/assets/vendor"
   ],
   "dependencies": {
-    "jquery": "^3.1.1",
-    "simple-line-icons": "^2.3.2",
-    "owl.carousel": "^2.3.3"
+    "owl.carousel": "^2.3.3",
+    "themify-icons": "^0.1.2"
   }
 }
