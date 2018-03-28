@@ -3,6 +3,19 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
 
 This project contains CoreModule, SharedModule and Lazyloading Routing (Nested Routes).
+
+## Run Project
+
+Install Node.js first. Then do the following commands :
+
+```bash
+npm install -g @angular/cli 
+npm install -g bower
+npm install
+bower install
+ng serve --open
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
