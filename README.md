@@ -1,8 +1,6 @@
-# Angular Seed Project
+# crDroid Website Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.1.
-
-This project contains CoreModule, SharedModule and Lazyloading Routing (Nested Routes).
 
 ## Run Project
 
