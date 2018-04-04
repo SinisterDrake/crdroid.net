@@ -10,6 +10,7 @@ declare var $: any;
 
 @Injectable()
 export class HomeComponent implements AfterViewInit {
+    selectedItem = 'home';
 
   constructor() { }
 
@@ -87,6 +88,7 @@ export class HomeComponent implements AfterViewInit {
   }
 
   scroll(el) {
+    this.selectedItem = el;
     el.scrollIntoView({ behavior: 'smooth' });
   }
 
