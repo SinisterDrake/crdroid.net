@@ -11,9 +11,11 @@ declare var $: any;
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DownloadComponent implements OnInit,AfterViewInit {
+  mobileQuery: MediaQueryList;
+  fillerNav = Array(50).fill(0).map((_, i) => `Nav Item ${i + 1}`);
 
-  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) { 
-    this.mobileQuery = media.matchMedia('(max-width: 1366px)');
+  constructor(changeDetectorRef: ChangeDetectorRef, media: MediaMatcher) {
+    this.mobileQuery = media.matchMedia('(max-width: 3300px)');
     this._mobileQueryListener = () => changeDetectorRef.detectChanges();
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
@@ -21,10 +23,6 @@ export class DownloadComponent implements OnInit,AfterViewInit {
   ngOnInit() { }
 
   ngAfterViewInit(): void { }
-
-  mobileQuery: MediaQueryList;
-
-  fillerNav = Array(50).fill(0).map((_, i) => `Nav Item ${i + 1}`);
 
   fillerContent = Array(50).fill(0).map(() =>
       `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -38,4 +36,5 @@ export class DownloadComponent implements OnInit,AfterViewInit {
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }
+
 }
